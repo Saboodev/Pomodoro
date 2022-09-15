@@ -69,7 +69,7 @@ function handleTicks(){
 
   }
   else {
-    initialTime = 1499;
+    initialTime;
     restTime = 300;
     displayWork.textContent = returnFormattedTime(initialTime)
     displayPause.textContent = returnFormattedTime(restTime)

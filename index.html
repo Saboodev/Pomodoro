@@ -11,32 +11,36 @@
     </head>
     <body>
 
-        <h1>Timer <span>POMODORO</span></h1>
+        <header>
+            <h1>Timer <span>POMODORO</span></h1>
+        </header> 
 
-        <div class="display">
-            <img class="imgTimer" src="ressources/workTimer.png" alt="image 3D travail et sablier">
-            <div class="block">
-                <p class="description work">Travail</p>
-                <p class="work-display-time time">25:00</p>
+        <main>
+            <div class="display">
+                <div class="block">
+                    <img class="imgTimer" src="ressources/workTimer.png" alt="image 3D travail et sablier">
+                    <p class="description work">Travail</p>
+                    <p class="work-display-time time">25:00</p>
+                </div>
+
+                <div class="block">
+                    <img class="imgMusic" src="ressources/PlayMusic.png" alt="personnage 3D qui écoute de la musique">
+                    <div class="description rest">Repos</div>
+                    <div class="pause-display-time time">5:00</div>
+                </div>
+
             </div>
 
-            <div class="block">
-                <div class="description rest">Repos</div>
-                <div class="pause-display-time time">5:00</div>
+            <div class="buttons-container">
+                <button class="btn start-btn">
+                    <img src="ressources/play.svg" alt="icone jouer">
+                </button>
+                <button class="btn reset-btn">
+                    <img src="ressources/reset.svg" alt="icone reset">
+                </button>
             </div>
-            <img class="imgMusic" src="ressources/PlayMusic.png" alt="personnage 3D qui écoute de la musique">
-
-        </div>
-
-        <div class="buttons-container">
-            <button class="btn start-btn">
-                <img src="ressources/play.svg" alt="icone jouer">
-            </button>
-            <button class="btn reset-btn">
-                <img src="ressources/reset.svg" alt="icone reset">
-            </button>
-        </div>
-        <p class="cycles">Cycle(s) : 0</p>
+            <p class="cycles">Cycle(s) : 0</p>
+        </main>
 
         <script src="app.js"></script>
     </body>
