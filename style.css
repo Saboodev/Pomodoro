@@ -8,9 +8,6 @@
 
 body {
   background: linear-gradient(to right, #ff57a3, #ffd194) no-repeat;
-  overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   font-family: Lato, sans-serif;
   padding: clamp(20px, 5vw, 50px) 10px;
   color: #161616;
@@ -52,6 +49,8 @@ h1 span {
   align-items: center;
   flex-direction: column;
   backdrop-filter: blur(50px);
+  border-top: 1px solid rgb(214 214 214);
+  border-left: 1px solid rgb(214 214 214);
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }

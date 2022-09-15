@@ -66,15 +66,17 @@ function handleTicks(){
     restTime--;
     displayPause.textContent = returnFormattedTime(restTime)
     handleClassAnimation({work: false, rest: true})
-
   }
   else {
     initialTime;
-    restTime = 300;
+    restTime;
     displayWork.textContent = returnFormattedTime(initialTime)
     displayPause.textContent = returnFormattedTime(restTime)
+    handleClassAnimation({work: false, rest: false})
+    startPauseBtn.firstElementChild.src = "ressources/play.svg"
+    reset()
     cyclesNumber++;
-    cyclesNumber.textContent = `Cycle(s) : ${cyclesNumber}`
+    cycles.textContent = `Cycle(s) : ${cyclesNumber}`
   }
 
 }
@@ -90,7 +92,7 @@ function reset(){
 
   handleClassAnimation({work: false, rest: false})
   startPauseBtn.firstElementChild.src = "ressources/play.svg"
-  cycles.textContent = "Cycle(s) : 0"
+  cycles.textContent = `Cycle(s) : ${cyclesNumber}`
 
   clearInterval(timerID);
   currentInterval = false;
