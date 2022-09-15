@@ -7,7 +7,10 @@
 }
 
 body {
-  background: linear-gradient(to right, #ff57a3, #ffd194);
+  background: linear-gradient(to right, #ff57a3, #ffd194) no-repeat;
+  overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   font-family: Lato, sans-serif;
   padding: clamp(20px, 5vw, 50px) 10px;
   color: #161616;
