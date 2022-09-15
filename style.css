@@ -7,7 +7,6 @@
 }
 
 body {
-  min-width: 309px;
   background: linear-gradient(to right, #ff57a3, #ffd194);
   font-family: Lato, sans-serif;
   padding: clamp(20px, 5vw, 50px) 10px;
@@ -51,12 +50,8 @@ h1 span {
   backdrop-filter: blur(50px);
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-  @media screen and(max-width: 1130px) {
-    width: 30%;
-    font-size: 16px;
-    padding: 10px;
-  }
 }
+
 .description {
   font-size: 40px;
   margin-bottom: 5px;
@@ -107,6 +102,7 @@ h1 span {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: pink;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -125,16 +121,40 @@ h1 span {
 .imgTimer {
     width: 15rem;
     padding: 1rem;
-    @media screen and(max-width: 1130px) {
-      width: 10rem;
-    }
 }
 
 .imgMusic {
     width: 15rem;
-    padding: 1rem;
-    @media screen and(max-width: 1130px) {
-      width: 10rem;
-    }
+    padding: 1rem; 
 }
 
+/*** version mobile ****/
+@media screen and (max-width: 770px) {
+
+  body {
+    min-width: 309px;
+  }
+
+  .display {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    margin: 10px;
+  }
+
+  .description {
+    font-size: 30px;
+  }
+
+  .imgMusic {
+    width: 10rem;
+  }
+
+  .imgTimer {
+    width: 10rem;
+  }
+
+}
