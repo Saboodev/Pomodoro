@@ -67,6 +67,12 @@ function handleTicks(){
     displayPause.textContent = returnFormattedTime(restTime)
     handleClassAnimation({work: false, rest: true})
   }
+  else if(pause && initialTime > 0 || restTime > 0) {
+    initialTime;
+    restTime;
+    displayWork.textContent = returnFormattedTime(initialTime)
+    displayPause.textContent = returnFormattedTime(restTime)
+  }
   else {
     initialTime;
     restTime;
