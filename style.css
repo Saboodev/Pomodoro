@@ -173,6 +173,10 @@ header a {
     padding: 1rem; 
 }
 
+footer {
+  text-align: center;
+}
+
 /*** version mobile ****/
 @media screen and (max-width: 770px) {
 
