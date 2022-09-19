@@ -9,23 +9,23 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https;//fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;600;800&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="bodySport">
 
         <header>
-            <h1>Timer <span>POMODORO</span></h1>
-            <a class="ongletSport" href="sport.html">Fitness</a>
+            <h1>Timer <span>FITNESS</span></h1>
+            <a class="ongletPomodoro" href="index.html">Pomodoro</a>
         </header> 
 
         <main>
             <div class="display">
                 <div class="block">
-                    <img class="imgTimer" src="ressources/workTimer.png" alt="image 3D travail et sablier">
-                    <p class="description work">Travail</p>
+                    <img class="imgTimer" src="ressources/weight.png" alt="image 3D travail et sablier">
+                    <p class="description work">Effort</p>
                     <p class="work-display-time time">25:00</p>
                 </div>
 
                 <div class="block">
-                    <img class="imgRest" src="ressources/PlayMusic.png" alt="personnage 3D qui écoute de la musique">
+                    <img class="imgRest" src="ressources/meditation.png" alt="personnage 3D qui écoute de la musique">
                     <div class="description rest">Repos</div>
                     <div class="pause-display-time time">5:00</div>
                 </div>
@@ -33,16 +33,16 @@
             </div>
 
             <div class="buttons-container">
-                <button class="btn start-btn">
+                <button class="btn btn-sport start-btn">
                     <img src="ressources/play.svg" alt="icone jouer">
                 </button>
-                <button class="btn reset-btn">
+                <button class="btn btn-sport reset-btn">
                     <img src="ressources/reset.svg" alt="icone reset">
                 </button>
             </div>
             <p class="cycles">Cycle(s) : 0</p>
         </main>
 
-        <script src="app.js"></script>
+        <script src="sport.js"></script>
     </body>
 </html>
