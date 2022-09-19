@@ -11,7 +11,7 @@ const displayPause = document.querySelector(".pause-display-time")
 displayWork.textContent = returnFormattedTime(initialTime)
 displayPause.textContent = returnFormattedTime(restTime)
 
-const startPauseBtn = document.querySelector(".start-btn");
+const startPauseBtn = document.querySelector(".start-btn")
 startPauseBtn.addEventListener("click", togglePomodoro)
 
 let currentInterval = false;
@@ -55,6 +55,9 @@ function handleClassAnimation(itemState){
 const cycles = document.querySelector(".cycles")
 let cyclesNumber = 0;
 
+let audio = new Audio('ressources/bip.mp3');
+let duration = audio.duration;
+
 function handleTicks(){
 
   if(!pause && initialTime > 0){
@@ -74,6 +77,7 @@ function handleTicks(){
     displayPause.textContent = returnFormattedTime(restTime)
   }
   else {
+    audio.play();
     initialTime;
     restTime;
     displayWork.textContent = returnFormattedTime(initialTime)
@@ -88,7 +92,7 @@ function handleTicks(){
 }
 
 const resetBtn = document.querySelector(".reset-btn");
-resetBtn.addEventListener("click", reset)
+resetBtn.addEventListener("click", reset);
 
 function reset(){
   initialTime = 180;
